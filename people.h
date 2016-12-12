@@ -6,12 +6,12 @@ class People
 public:
 	People();
 	~People();
-	void SetCount(int input);
-	void SetFIO(char *F[20], char *I[20], char *O[20]);
-	int GetCount();
-	char *GetF();
-	char *GetI();
-	char *GetO();
+	void setCount(int input);
+	void setFIO(char F[20], char I[20], char O[20]);
+	int getCount();
+	char *getF();
+	char *getI();
+	char *getO();
 
 private:
 	int count; 

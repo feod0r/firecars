@@ -1,22 +1,27 @@
 #include "people.h"
-void People::SetFIO(char *F[20], char *I[20], char *O[20]) {
-	*fio[1] = *F;
-	*fio[2] = *I;
-	*fio[3] = *O;
+void People::setFIO(char F[20], char I[20], char O[20]) {
+	*fio[0] = F;
+	*fio[1] = I;
+	*fio[2] = O;
 }
-void People::SetCount(int input) {
+void People::setCount(int input) {
 	count = input;
 }
-char * People::GetF() {
+int People::getCount() {
+	return count;
+}
+char * People::getF() {
+	return *fio[0];
+}
+char * People::getI() {
 	return *fio[1];
 }
-char * People::GetI() {
+char * People::getO() {
 	return *fio[2];
 }
-char * People::GetO() {
-	return *fio[3];
-}
 People::People() {
+	setFIO("Stringman", "Ibragim", "Eminovich");
+	setCount(1);
 }
 People::~People() {
 }
