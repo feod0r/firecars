@@ -2,6 +2,7 @@
 #include "people.h"
 #include <iostream>
 #include "list.h"
+#include "red-black-tree.cpp"
 
 
 using namespace std;
@@ -20,7 +21,20 @@ int main() {
 	ListOfFireCars.Show();
 	cout << "Out of list END. " << endl;
 
-	cout << emin.getF();
-	system("pause");
+    //cout << emin.getF();
+
+    int n;
+    bitree mybitree;
+    cout<<"Не смог придумать куда запихать дерево, так что просто демонстрация его работы: " <<endl<< "введите количество элементов  ";
+    cin>>n; //Вводим количество элементов
+    for (int i=0;i<n;++i)
+        {
+
+        mybitree.push(1+rand()%(100),&mybitree.tree); //И каждый кладем в дерево
+        }
+    cout<<"ваше дерево\n";
+        mybitree.print(mybitree.tree,0);
+        system("echo program ended");
+
 	return 0;
 }

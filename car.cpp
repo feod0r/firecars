@@ -1,6 +1,6 @@
 #include "car.h"
 #include "people.h"
-//методы главного класса
+//РјРµС‚РѕРґС‹ РіР»Р°РІРЅРѕРіРѕ РєР»Р°СЃСЃР°
  char * Cars::getNumber(){
 	 return *number;
 	}
@@ -14,14 +14,14 @@
 	 *number = input;
  }
  Cars::Cars() {
-	 setNumber("х999хх");
+     setNumber("x999xx");
 	 setCount(1);
 
  }
  Cars::~Cars() {
  }
  
- //методы класса пожарных машин
+ //РјРµС‚РѕРґС‹ РєР»Р°СЃСЃР° РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ
 
  void FireCars::setCrew(int i, People input) {
 	 crew[i] = input;
@@ -35,7 +35,7 @@
  FireCars::~FireCars() {
  }
 
- //Класс гражданских машин
+ //РљР»Р°СЃСЃ РіСЂР°Р¶РґР°РЅСЃРєРёС… РјР°С€РёРЅ
  void CivilCars::setMember(int i, People input) {
 	 *member[i] = input;
  }

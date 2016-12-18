@@ -1,7 +1,7 @@
 #include "cars.h"
 #include "people.h"
-//методы главного класса
- char * Cars::GetNumber(){
+//РјРµС‚РѕРґС‹ РіР»Р°РІРЅРѕРіРѕ РєР»Р°СЃСЃР°
+ char* Cars::GetNumber(){
 	 return *number;
 	}
  int Cars::GetCount() {
@@ -18,7 +18,7 @@
  Cars::~Cars() {
  }
  
- //методы класса пожарных машин
+ //РјРµС‚РѕРґС‹ РєР»Р°СЃСЃР° РїРѕР¶Р°СЂРЅС‹С… РјР°С€РёРЅ
 
  void FireCars::SetCrew(int i, People input) {
 	 *crew[i] = input;
@@ -32,7 +32,7 @@
  FireCars::~FireCars() {
  }
 
- //Класс гражданских машин
+ //РљР»Р°СЃСЃ РіСЂР°Р¶РґР°РЅСЃРєРёС… РјР°С€РёРЅ
  void CivilCars::SetMember(int i, People input) {
 	 *member[i] = input;
  }
